@@ -16,4 +16,4 @@ System Objectives:
 
 - Provide a historical and real-time visual dashboard for officials and the public.
 
-![image alt](https://github.com/NaveedHossain2026/CST8912/blob/8367e6742b467119652768d0769a8c6640096b7c/Lab%209/Lab9/Screenshot%202026-04-16%20154536.png)
+![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/72afb05e89310afb94ffa0f5fdbcd4676f0187a5/diagram.png)
