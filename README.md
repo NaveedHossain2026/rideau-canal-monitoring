@@ -32,3 +32,16 @@ The system starts with a Python-based IoT simulator that acts like real sensors 
 __Azure IoT Hub configuration__
 
 Azure IoT Hub is used as the central entry point for all this data. It securely manages each device, making sure only trusted data is accepted. It also handles the high volume of incoming messages and passes them to other services for real-time processing and storage, ensuring the system runs smoothly and reliably.
+
+__Stream Analytics job (include query)__
+
+ Azure Stream Analytics is the brain of the system, which processes the data in real time. It groups incoming sensor data into a Tumbling Window(5 minutes) and calculates averages. Using a simple SQL query, it also determines a safety status: if the ice is thick enough (30 cm or more) and the temperature is cold enough (−2°C or lower), it’s marked “Safe”; otherwise, it is labeled “Caution” or “Unsafe” based on the conditions.
+
+__Cosmos DB setup and Blob Storage configuration__
+
+The system uses two types of storage for different needs. Azure Cosmos DB stores the latest processed data so the dashboard can load quickly and show real-time updates. At the same time, Azure Blob Storage saves all the raw sensor data for long-term storage. This way, the app stays fast while still keeping a full history for future analysis.
+
+
+__Web Dashboard and Azure App Service deployment (link to repo)__
+
+The user interface is a Node.js and Express web app that shows real-time canal conditions. The backend uses a query that groups data by location, so each part of the dashboard shows the latest update without duplicates. It is hosted on Azure App Service and uses GitHub Actions for automatic deployment whenever code is updated. The frontend uses Chart.js to display simple, interactive charts showing how ice conditions change over time.
