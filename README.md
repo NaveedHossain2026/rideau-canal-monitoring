@@ -19,4 +19,4 @@ System Objectives:
 
 ## System Architecture
 
-![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/72afb05e89310afb94ffa0f5fdbcd4676f0187a5/diagram.png)
+![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/ff022cb4dd624195d9cf23febc095c673d068601/architecture/architecture-diagram.png)
