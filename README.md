@@ -16,4 +16,6 @@ System Objectives:
 
 - Provide a historical and real-time visual dashboard for officials and the public.
 
+  ## System Architecture
+
 ![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/72afb05e89310afb94ffa0f5fdbcd4676f0187a5/diagram.png)
