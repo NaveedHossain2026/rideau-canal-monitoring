@@ -8,7 +8,7 @@ Student ID: [Your ID]
 
 Problem Statement: The Rideau Canal Skateway requires precise, real-time monitoring of ice thickness and surface temperature across multiple sections (Dow's Lake, Fifth Avenue, and the NAC) to ensure public safety and optimize maintenance.
 
-System Objectives:
+__System Objectives:__
 
 - Automate telemetry collection from remote locations.
 
@@ -25,10 +25,10 @@ This architecture simulates an IoT-based safety monitoring system where multiple
 
 ## Implementation Overview
 
-IoT Sensor Simulation
+__IoT Sensor Simulation__
 
 The system starts with a Python-based IoT simulator that acts like real sensors along the Rideau Canal. Using asynchronous tasks, it simulates three locations: Dow’s Lake, Fifth Avenue, and the NAC—running at the same time. Each sensor generates realistic data like ice thickness, temperature, and snow levels, then sends it as JSON using MQTT. This setup allows continuous data streaming without delays.
 
-Azure IoT Hub configuration
+__Azure IoT Hub configuration__
 
 Azure IoT Hub is used as the central entry point for all this data. It securely manages each device, making sure only trusted data is accepted. It also handles the high volume of incoming messages and passes them to other services for real-time processing and storage, ensuring the system runs smoothly and reliably.
