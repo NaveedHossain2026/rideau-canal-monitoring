@@ -15,3 +15,5 @@ System Objectives:
 - Process data streams to determine "Safe," "Caution," or "Unsafe" conditions.
 
 - Provide a historical and real-time visual dashboard for officials and the public.
+
+![image alt](https://github.com/NaveedHossain2026/CST8912/blob/8367e6742b467119652768d0769a8c6640096b7c/Lab%209/Lab9/Screenshot%202026-04-16%20154536.png)
