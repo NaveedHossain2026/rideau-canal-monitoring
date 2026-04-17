@@ -22,3 +22,13 @@ System Objectives:
 ![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/ff022cb4dd624195d9cf23febc095c673d068601/architecture/architecture-diagram.png)
 
 This architecture simulates an IoT-based safety monitoring system where multiple sensors, such as those representing Dow’s Lake, Fifth Avenue, and the NAC, generate telemetry data in JSON format every 10 seconds using Python. This data is sent to Azure IoT Hub, which acts as the main entry point. It is then processed in real time by Azure Stream Analytics, where it is processed in real time using a 5-minute tumbling window to aggregate and summarize the incoming data, such as calculating averages or determining safety status for each location. The processed data is then routed to two destinations: Azure Cosmos DB for fast access by the dashboard, while Azure Blob Storage keeps a long-term archival copy of historical data. A web dashboard hosted on Azure App Service retrieves the processed data from Cosmos DB and presents it to users in a browser, displaying safety statuses such as safe, caution, or unsafe.
+
+## Implementation Overview
+
+IoT Sensor Simulation
+
+The system starts with a Python-based IoT simulator that acts like real sensors along the Rideau Canal. Using asynchronous tasks, it simulates three locations: Dow’s Lake, Fifth Avenue, and the NAC—running at the same time. Each sensor generates realistic data like ice thickness, temperature, and snow levels, then sends it as JSON using MQTT. This setup allows continuous data streaming without delays.
+
+Azure IoT Hub configuration
+
+Azure IoT Hub is used as the central entry point for all this data. It securely manages each device, making sure only trusted data is accepted. It also handles the high volume of incoming messages and passes them to other services for real-time processing and storage, ensuring the system runs smoothly and reliably.
