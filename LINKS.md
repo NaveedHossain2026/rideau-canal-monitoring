@@ -1,9 +1,9 @@
 # Project Repository Links
 
 ## Student Information
-- **Name:** Your Full Name
+- **Name:** Naveed Hossain
 - **Student ID:** 123456789
-- **Course:** CST8916 - Fall 2025
+- **Course:** CST8916 - Winter 2026
 
 ## Repository Links
 
