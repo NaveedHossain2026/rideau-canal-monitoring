@@ -40,7 +40,7 @@ __Azure IoT Hub configuration__
 
 Azure IoT Hub is used as the central entry point for all this data. It securely manages each device, making sure only trusted data is accepted. It also handles the high volume of incoming messages and passes them to other services for real-time processing and storage, ensuring the system runs smoothly and reliably.
 
-__Stream Analytics job (include query)__
+__Stream Analytics job__
 
  Azure Stream Analytics is the brain of the system, which processes the data in real time. It groups incoming sensor data into a Tumbling Window(5 minutes) and calculates averages. Using a simple SQL query, it also determines a safety status: if the ice is thick enough (30 cm or more) and the temperature is cold enough (−2°C or lower), it’s marked “Safe”; otherwise, it is labeled “Caution” or “Unsafe” based on the conditions.
 
