@@ -58,6 +58,8 @@ The user interface is a Node.js and Express web app that shows real-time canal c
 
 ## Video Demonstration
 
+https://www.youtube.com/watch?v=fS4D2X9BBHs
+
 ## Setup Instructions
 
 __Prerequisites__
