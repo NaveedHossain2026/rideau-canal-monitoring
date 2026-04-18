@@ -21,7 +21,7 @@ __System Objectives:__
 
 ![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/ff022cb4dd624195d9cf23febc095c673d068601/architecture/architecture-diagram.png)
 
-This architecture simulates an IoT-based safety monitoring system where multiple sensors, such as those representing Dow’s Lake, Fifth Avenue, and the NAC, generate telemetry data in JSON format every 10 seconds using Python. This data is sent to Azure IoT Hub, which acts as the main entry point. It is then processed in real time by Azure Stream Analytics, where it is processed in real time using a 5-minute tumbling window to aggregate and summarize the incoming data, such as calculating averages or determining safety status for each location. The processed data is then routed to two destinations: Azure Cosmos DB for fast access by the dashboard, while Azure Blob Storage keeps a long-term archival copy of historical data. A web dashboard hosted on Azure App Service retrieves the processed data from Cosmos DB and presents it to users in a browser, displaying safety statuses such as safe, caution, or unsafe.
+This architecture simulates an IoT-based safety monitoring system where multiple sensors, such as those representing Dow’s Lake, Fifth Avenue, and the NAC, generate telemetry data in JSON format every 10 seconds using Python. This data is sent to Azure IoT Hub, which acts as the main entry point. It is then processed in real time by Azure Stream Analytics, where it is processed in a 5-minute tumbling window to aggregate and summarize the incoming data, such as calculating averages or determining safety status for each location. The processed data is then routed to two destinations: Azure Cosmos DB for fast access by the dashboard, while Azure Blob Storage keeps a long-term archival copy of historical data. A web dashboard hosted on Azure App Service retrieves the processed data from Cosmos DB and presents it to users in a browser, displaying safety statuses such as safe, caution, or unsafe.
 
 ## Implementation Overview
 
@@ -45,3 +45,39 @@ The system uses two types of storage for different needs. Azure Cosmos DB stores
 __Web Dashboard and Azure App Service deployment (link to repo)__
 
 The user interface is a Node.js and Express web app that shows real-time canal conditions. The backend uses a query that groups data by location, so each part of the dashboard shows the latest update without duplicates. It is hosted on Azure App Service and uses GitHub Actions for automatic deployment whenever code is updated. The frontend uses Chart.js to display simple, interactive charts showing how ice conditions change over time.
+
+## Repository Links
+
+## Video Demonstration
+
+## Setup Instructions
+
+__Prerequisites__
+
+To run this system, you need:
+
+Accounts: An Azure Subscription (Free/Student) and a GitHub account.
+
+Software: Python 3.9+ (for sensors) and Node.js 18+ (for the dashboard).
+
+Tools: Git for cloning repositories and VS Code for configuration.
+
+__High-Level Setup Steps__
+
+Azure Infrastructure: Create an IoT Hub to receive data, Cosmos DB to store it, and Blob Storage to archive it.
+
+Data Logic: Set up a Stream Analytics Job to bridge the Hub and the Database using the provided SQL query.
+
+Deploy Sensors: Clone the Simulation Repo, update the connection string, and run the Python script to start sending data.
+
+Deploy Dashboard: Clone the Web Repo, connect it to your Cosmos DB, and deploy it to an Azure App Service.
+
+
+## Results and Analysis
+
+Sample Outputs and Screenshots
+The system successfully visualizes telemetry from three distinct canal sectors: Dow's Lake, Fifth Avenue, and the NAC.
+
+Real-Time Cards: Change color (Green/Orange/Red) instantly based on safety thresholds.
+
+Historical Trending: The chart tracks ice thickness over time, showing how the data "tumbles" into averages.
