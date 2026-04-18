@@ -104,3 +104,10 @@ __Data analysis__
 Using tumbling windows was key because it filters out small fluctuations (noise) and focuses on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
 
 ## AI Tools Disclosure
+
+### AI Tools Used
+
+- **Tool:** Gemini (Google), Claude
+- **Purpose:** Architecture design, Code generation, debugging, and documentation structuring.
+- **Extent:** AI was used to generate code for the sensor simulation and web dashboard, structure the project documentation, and assist in designing the system architecture diagrams. All Azure resource provisioning and final system integration were performed manually.
+
