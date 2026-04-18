@@ -53,7 +53,7 @@ The user interface is a Node.js and Express web app that shows real-time canal c
 - **Description:** IoT sensor simulator code
 
 ### 3. Web Dashboard Repository
-- **URL:** [https://github.com/NaveedHossain2026/rideau-canal-dashboard](https://github.com/NaveedHossain2026/rideau-canal-sensor-simulation)
+- **URL:** https://github.com/NaveedHossain2026/rideau-canal-dashboard
 - **Description:** Web dashboard application
 
 ## Video Demonstration
