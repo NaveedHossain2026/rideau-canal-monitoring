@@ -5,6 +5,7 @@ Student Name: Naveed Hossain
 Student ID: 041081882
 
 [https://github.com/yourusername/rideau-canal-sensor-simulation](https://github.com/NaveedHossain2026/rideau-canal-sensor-simulation)
+https://github.com/NaveedHossain2026/rideau-canal-dashboard
 
 
 ## Scenario Overview
