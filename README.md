@@ -4,6 +4,9 @@ Student Name: Naveed Hossain
 
 Student ID: 041081882
 
+[https://github.com/yourusername/rideau-canal-sensor-simulation](https://github.com/NaveedHossain2026/rideau-canal-sensor-simulation)
+
+
 ## Scenario Overview
 
 Problem Statement: The Rideau Canal Skateway requires precise, real-time monitoring of ice thickness and surface temperature across multiple sections (Dow's Lake, Fifth Avenue, and the NAC) to ensure public safety and optimize maintenance.
