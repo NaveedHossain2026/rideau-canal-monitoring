@@ -109,7 +109,7 @@ __Sample Outputs and Screenshots__
 
 The system successfully visualizes telemetry from three distinct canal sectors: Dow's Lake, Fifth Avenue, and the NAC.
 
-Real-Time Cards: Change color (Green/Orange/Red) instantly based on safety thresholds.
+Real-Time Cards: Change color (Green/Yellow/Red) instantly based on safety thresholds.
 
 Historical Trending: The chart tracks ice thickness over time, showing how the data "tumbles" into averages.
 
