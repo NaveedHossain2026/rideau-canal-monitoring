@@ -102,7 +102,7 @@ Historical Trending: The chart tracks ice thickness over time, showing how the d
 
 __Data analysis__
 
-Using tumbling windows was key because it filters out small fluctuations (noise) and focuses on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
+Using tumbling windows was key because they filter out small fluctuations (noise) and focus on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
 
 ## AI Tools Disclosure
 
@@ -110,5 +110,5 @@ Using tumbling windows was key because it filters out small fluctuations (noise)
 
 - **Tool:** Gemini (Google), Claude
 - **Purpose:** Architecture design, Code generation, debugging, and documentation structuring.
-- **Extent:** AI was used to generate code for the sensor simulation and web dashboard, structure the project documentation, and assist in designing the system architecture diagrams. All Azure resource provisioning and final system integration were performed manually.
+- **Extent:** AI was used to generate code to assist with the development of the sensor simulation and web dashboard, structure the project documentation, and assist in designing the system architecture diagrams. All Azure resource provisioning and final system integration were performed manually.
 
