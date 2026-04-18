@@ -36,6 +36,8 @@ __IoT Sensor Simulation__
 
 The system starts with a Python-based IoT simulator that acts like real sensors along the Rideau Canal. Using asynchronous tasks, it simulates three locations: Dow’s Lake, Fifth Avenue, and the NAC—running at the same time. Each sensor generates realistic data like ice thickness, temperature, and snow levels, then sends it as JSON using MQTT. This setup allows continuous data streaming without delays.
 
+https://github.com/NaveedHossain2026/rideau-canal-sensor-simulation
+
 __Azure IoT Hub configuration__
 
 Azure IoT Hub is used as the central entry point for all this data. It securely manages each device, making sure only trusted data is accepted. It also handles the high volume of incoming messages and passes them to other services for real-time processing and storage, ensuring the system runs smoothly and reliably.
@@ -51,9 +53,11 @@ __Cosmos DB setup and Blob Storage configuration__
 The system uses two types of storage for different needs. Azure Cosmos DB stores the latest processed data so the dashboard can load quickly and show real-time updates. At the same time, Azure Blob Storage saves all the raw sensor data for long-term storage. This way, the app stays fast while still keeping a full history for future analysis.
 
 
-__Web Dashboard and Azure App Service deployment (link to repo)__
+__Web Dashboard and Azure App Service deployment__
 
 The user interface is a Node.js and Express web app that shows real-time canal conditions. The backend uses a query that groups data by location, so each part of the dashboard shows the latest update without duplicates. It is hosted on Azure App Service and uses GitHub Actions for automatic deployment whenever code is updated. The frontend uses Chart.js to display simple, interactive charts showing how ice conditions change over time.
+
+https://github.com/NaveedHossain2026/rideau-canal-dashboard
 
 ## Repository Links
 
