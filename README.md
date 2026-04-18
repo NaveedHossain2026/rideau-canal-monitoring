@@ -58,7 +58,7 @@ The user interface is a Node.js and Express web app that shows real-time canal c
 - **URL:** https://github.com/NaveedHossain2026/rideau-canal-dashboard
 - **Description:** Web dashboard application
 
-  ### 2. Live Dashboard Deployment
+### 3. Live Dashboard Deployment
 - **URL:** rideau-canal-dashboard-ddbqa8hndpaebcbg.canadacentral-01.azurewebsites.net
 - **Description:** The live deployment of the dashboard application
 
