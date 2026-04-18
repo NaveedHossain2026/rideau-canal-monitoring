@@ -111,7 +111,7 @@ The system successfully visualizes telemetry from three distinct canal sectors: 
 
 Real-Time Cards: Change color (Green/Yellow/Red) instantly based on safety thresholds.
 
-Historical Trending: The chart tracks ice thickness over time, showing how the data "tumbles" into averages.
+Historical Trending: The chart tracks ice thickness over time.
 
 __Data analysis__
 
