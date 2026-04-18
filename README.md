@@ -46,13 +46,13 @@ Azure IoT Hub is used as the central entry point for all this data. It securely 
 
 __Stream Analytics job__
 
- Azure Stream Analytics is the brain of the system, which processes the data in real time. It groups incoming sensor data into a Tumbling Window(5 minutes) and calculates averages. Using a simple SQL query, it also determines a safety status: if the ice is thick enough (30 cm or more) and the temperature is cold enough (−2°C or lower), it’s marked “Safe”; otherwise, it is labeled “Caution” or “Unsafe” based on the conditions.
+ Azure Stream Analytics is the brain of the system, which processes the data in real time. It groups incoming sensor data into a Tumbling Window (5 minutes) and calculates averages. Using a simple SQL query, it also determines a safety status: if the ice is thick enough (30 cm or more) and the temperature is cold enough (−2°C or lower), it’s marked “Safe”; otherwise, it is labeled “Caution” or “Unsafe” based on the conditions.
 
  ![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/4388305e9be3293e97918217c9c44ba5cce8cceb/screenshots/03-stream-analytics-query.png)
 
 __Cosmos DB setup and Blob Storage configuration__
 
-The system uses two types of storage for different needs. Azure Cosmos DB stores the latest processed data so the dashboard can load quickly and show real-time updates. At the same time, Azure Blob Storage saves all the raw sensor data for long-term storage. This way, the app stays fast while still keeping a full history for future analysis.
+The system uses two types of storage for different needs. Azure Cosmos DB stores the latest processed data, so the dashboard can load quickly and show real-time updates. At the same time, Azure Blob Storage saves all the raw sensor data for long-term storage. This way, the app stays fast while still keeping a full history for future analysis.
 
 
 __Web Dashboard and Azure App Service deployment__
