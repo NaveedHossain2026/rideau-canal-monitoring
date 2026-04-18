@@ -75,9 +75,14 @@ Deploy Dashboard: Clone the Web Repo, connect it to your Cosmos DB, and deploy i
 
 ## Results and Analysis
 
-Sample Outputs and Screenshots
+__Sample Outputs and Screenshots__
+
 The system successfully visualizes telemetry from three distinct canal sectors: Dow's Lake, Fifth Avenue, and the NAC.
 
 Real-Time Cards: Change color (Green/Orange/Red) instantly based on safety thresholds.
 
 Historical Trending: The chart tracks ice thickness over time, showing how the data "tumbles" into averages.
+
+__Data analysis__
+
+Using tumbling windows was key because it filters out small fluctuations (noise) and focuses on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
