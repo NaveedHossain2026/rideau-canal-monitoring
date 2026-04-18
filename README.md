@@ -96,3 +96,5 @@ Historical Trending: The chart tracks ice thickness over time, showing how the d
 __Data analysis__
 
 Using tumbling windows was key because it filters out small fluctuations (noise) and focuses on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
+
+## AI Tools Disclosure
