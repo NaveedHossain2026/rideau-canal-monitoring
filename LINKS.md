@@ -12,11 +12,11 @@
 - **Description:** Complete project documentation, architecture, screenshots, and guides
 
 ### 2. Sensor Simulation Repository
-- **URL:** https://github.com/yourusername/rideau-canal-sensor-simulation
+- **URL:** https://github.com/NaveedHossain2026/rideau-canal-sensor-simulation
 - **Description:** IoT sensor simulator code
 
 ### 3. Web Dashboard Repository
-- **URL:** https://github.com/yourusername/rideau-canal-dashboard
+- **URL:** https://github.com/NaveedHossain2026/rideau-canal-dashboard
 - **Description:** Web dashboard application
 
 ## Demo
