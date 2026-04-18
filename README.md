@@ -113,6 +113,9 @@ Real-Time Cards: Change color (Green/Yellow/Red) instantly based on safety thres
 
 Historical Trending: The chart tracks ice thickness over time.
 
+![image alt](https://github.com/NaveedHossain2026/rideau-canal-monitoring/blob/41bc77b6cee391f5d69f767bd3286089e089c81a/screenshots/08-dashboard-azure.png)
+
+
 __Data analysis__
 
 Using tumbling windows was key because they filter out small fluctuations (noise) and focus on stable 5-minute averages. During testing, when ice thickness dropped below 25 cm, the system correctly triggered an “Unsafe” alert on the dashboard within one refresh cycle.
