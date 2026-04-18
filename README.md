@@ -123,5 +123,5 @@ Using tumbling windows was key because they filter out small fluctuations (noise
 
 - **Tool:** Gemini (Google), Claude
 - **Purpose:** Architecture design, Code generation, debugging, and documentation structuring.
-- **Extent:** AI was used to generate code to assist with the development of the sensor simulation and web dashboard, structure the project documentation, and assist in designing the system architecture diagrams. All Azure resource provisioning and final system integration were performed manually.
+- **Extent:** AI was used to generate code to assist with the development of the sensor simulation and web dashboard, assist with the project documentation, and assist in designing the system architecture diagrams. All Azure resource provisioning and final system integration were performed manually.
 
